@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AboutMe-睿骐的博客</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://okipr803q.qnssl.com/heartbeat.ico" type="image/x-icon">
+
+    <meta http-equiv="content-language" content="zh-CN" />
+    <meta name="keywords" content="Blog">
+    <meta name="author" contect="ricky, rio7@qq.com" />
+    <!-- 优先使用 IE 最新版本和 Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!-- 搜索引擎抓取 -->
+    <meta name="robots" content="index"/>
+
+
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+
+        }
+
+
+        #content{
+
+            margin-top: 10px;
+        }
+
+
+        /*左侧介绍*/
+        .intro{
+            position: absolute;
+            right: 50%;
+            top: 50%;
+            margin-top: -275px;
+            width: 600px;
+            height: 550px;
+            /*border: 1px solid black;*/
+            text-align: center;
+
+        }
+        .intro .intro-wrap{
+            position: relative;
+            margin-top: 150px;
+        }
+        /*.intro .motto{*/
+            /*font-size: large;*/
+            /*font-weight: bold;*/
+            /*position: absolute;*/
+            /*bottom: 15px;*/
+            /*width: 100%;*/
+            /*height: 20px;*/
+
+        /*}*/
+        /*右侧联系方式*/
+        #main{
+            width: 350px;
+            position: absolute;
+            left: 60%;
+            top: 50%;
+            margin-top: -275px;
+
+            margin-right: 20px;
+            height: 550px;
+
+        }
+
+        .sty{
+
+            color: #808000;
+            margin-left: 50px;
+        }
+        .sty a{
+            text-decoration: none;
+            color: #000000;
+        }
+
+
+        .anniu>a:hover{
+            color: #696969;
+            text-decoration: underline;
+        }
+
+        /*中线*/
+        .mid{
+
+            position: absolute;
+            left: 50%;
+            margin-left: -2.5px;
+            border: 1px solid black;
+            top: 50%;
+            margin-top: -200px;
+            width: 5px;
+            height: 400px;
+            background-color: #063053;
+            /*background-image: linear-gradient(#063053, #395873, #5c7c99);*/
+            background-image: linear-gradient(red, green, blue, purple, orange);
+
+        }
+
+        /*页脚*/
+        #footer{
+            position: absolute;
+            bottom: 10px;
+            width: 600px;
+            height: 50px;
+            left: 50%;
+            margin-left: -300px;
+
+        }
+        .beian{
+            text-align: center;
+            padding-top: 5px;
+            margin: 0 auto;
+            color: #30608F;
+        }
+        .beian a{
+            text-decoration: none;
+            color: cadetblue;
+        }
+        #backhome{
+
+            color: #6b8e23;
+        }
+        #backhome:hover{
+            color: #000000;
+            text-decoration: blink;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="content">
+
+        <div class="intro">
+            <div class="intro-wrap">
+                <h1>Ricky</h1>
+                <p>男，96年前端小萌，喜欢各种新奇有趣的事物</p>
+                <p>ZJU-Digital Media Technology</p>
+                <p class="motto">Keep it Simple and Stupid!</p>
+                <p>爱运动，爱玩英雄联盟</p>
+                <p>爱新技术，追求完美</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="mid"></div>
+
+
+
+
+        <div id="main">
+            <div class="top">
+                <h4 class="sty">/**</h4>
+                <h4 class="sty">&nbsp&nbsp*&nbsp&nbsp<a href="">@name</a> Ricky</h4>
+                <h4 class="sty">&nbsp&nbsp*&nbsp&nbsp<a href="">@mail</a> rqcao#qq.com</h4>
+                <h4 class="sty">&nbsp&nbsp*&nbsp&nbsp<a href="">@wechat</a> Y2FvcnVpcWkzNzMz</h4>
+                <h4 class="sty">&nbsp&nbsp*&nbsp&nbsp<a href="">@qq</a> ODc1MzE5NzM2</h4>
+                <h4 class="sty">**/</h4>
+            </div>
+            <div class="bot">
+                <h4 class="sty anniu">{</h4>
+                <h4 class="sty anniu">&nbsp&nbsp*&nbsp&nbspBlog:<a href="https://rickyer.com" style="padding-left: 60px">Ricky's Blog</a> </h4>
+                <h4 class="sty anniu">&nbsp&nbsp*&nbsp&nbspWeibo:<a href="http://weibo.com/u/2446176027" style="padding-left: 46px">和星星说WANAN</a> </h4>
+                <h4 class="sty anniu">&nbsp&nbsp*&nbsp&nbspResume:<a href="" style="padding-left: 33px">未完成</a> </h4>
+                <h4 class="sty anniu">&nbsp&nbsp*&nbsp&nbspGitHub:<a href="https://github.com/imricky" style="padding-left: 40px">imricky</a> </h4>
+                <h4 class="sty anniu">}</h4>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+
+        <p class="beian"><a href="#" style="color: #db7093">©2016-2017</a>  | <a href="https://rickyer.com"  id="backhome">返回主页</a> | <a href="">Ricky</a> </p>
+        <p class="beian"><a href="http://www.miitbeian.gov.cn/" >浙ICP备15040135号-1</a></p>
+    </div>
+    <script>
+        !function(){function o(w,v,i){return w.getAttribute(v)||i}function j(i){return document.getElementsByTagName(i)}function l(){var i=j("script"),w=i.length,v=i[w-1];return{l:w,z:o(v,"zIndex",-1),o:o(v,"opacity",0.5),c:o(v,"color","0,0,0"),n:o(v,"count",99)}}function k(){r=u.width=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,n=u.height=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight}function b(){e.clearRect(0,0,r,n);var w=[f].concat(t);var x,v,A,B,z,y;t.forEach(function(i){i.x+=i.xa,i.y+=i.ya,i.xa*=i.x>r||i.x<0?-1:1,i.ya*=i.y>n||i.y<0?-1:1,e.fillRect(i.x-0.5,i.y-0.5,1,1);for(v=0;v<w.length;v++){x=w[v];if(i!==x&&null!==x.x&&null!==x.y){B=i.x-x.x,z=i.y-x.y,y=B*B+z*z;y<x.max&&(x===f&&y>=x.max/2&&(i.x-=0.03*B,i.y-=0.03*z),A=(x.max-y)/x.max,e.beginPath(),e.lineWidth=A/2,e.strokeStyle="rgba("+s.c+","+(A+0.2)+")",e.moveTo(i.x,i.y),e.lineTo(x.x,x.y),e.stroke())}}w.splice(w.indexOf(i),1)}),m(b)}var u=document.createElement("canvas"),s=l(),c="c_n"+s.l,e=u.getContext("2d"),r,n,m=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(i){window.setTimeout(i,1000/45)},a=Math.random,f={x:null,y:null,max:20000};u.id=c;u.style.cssText="position:fixed;top:0;left:0;z-index:"+s.z+";opacity:"+s.o;j("body")[0].appendChild(u);k(),window.onresize=k;window.onmousemove=function(i){i=i||window.event,f.x=i.clientX,f.y=i.clientY},window.onmouseout=function(){f.x=null,f.y=null};for(var t=[],p=0;s.n>p;p++){var h=a()*r,g=a()*n,q=2*a()-1,d=2*a()-1;t.push({x:h,y:g,xa:q,ya:d,max:6000})}setTimeout(function(){b()},100)}();
+    </script>
+</body>
+</html>

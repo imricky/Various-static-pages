@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>404-Not-Found</title>
+	<!-- <link rel="stylesheet" href="style.css"> -->
+	<link rel="shortcut icon" href="https://okipr803q.qnssl.com/heartbeat.ico" type="image/x-icon">
+	<meta http-equiv="content-language" content="zh-CN" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="keywords" content="404">
+	<meta name="author" contect="ricky, rio7@qq.com" />
+	<!-- 优先使用 IE 最新版本和 Chrome -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+	<!--IE8或者更低的版本不支持CSS3媒体查询，但通过添加脚本 css3-mediaqueries.js来实现这一功能-->
+    <!–[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/livingston-css3-mediaqueries-js/1.0.0/css3-mediaqueries.min.js"></script>
+    <![endif]–>
+
+
+
+	<style>
+		html {
+		  font-family: sans-serif; /* 1 */
+		  line-height: 1.15; /* 2 */
+		  -ms-text-size-adjust: 100%; /* 3 */
+		  -webkit-text-size-adjust: 100%; /* 3 */
+		  height: 100%
+		}
+
+		body{
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			background: #fff url(https://okipr803q.qnssl.com/aboutme-backgroundPicture.jpg) repeat-x 100% 0;
+			/* background-image: url(http://cdn.rickyer.com/aboutme-backgroundPicture.jpg) no-repeat; */
+			/* background: #ccc url(http://cdn.rickyer.com/aboutme-backgroundPicture.jpg) repeat; */
+
+			/*background: #E0EAFC;  /*fallback for old browsers */
+			/*background: -webkit-linear-gradient(to left, #E0EAFC , #CFDEF3);  /*Chrome 10-25, Safari 5.1-6 */
+			/*background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		}
+
+
+
+		/* 顶部说明的css */
+		.instruction{
+			position: absolute;
+			width: 700px;
+			height: 90px;
+			top: 0;
+			left: 50%;
+			margin-left: -350px; 
+
+		}
+		.instruction h1{
+			text-align: center;
+			font-family: "Belshaw",Georgia,Serif;
+			font-size: 40px;
+			margin-top: 0px;
+		}
+		.instruction p{
+			text-align: center;
+		}
+
+		.no-here span{
+			color: #ff6347;
+			font-weight: bold;
+			font-size: 18px;
+		}
+		.backhome{
+			text-decoration: none;
+			color: #404040;
+			font-size: 20px;
+			font-weight: bolder;
+		}
+		.backhome:hover{
+			color: #BFBFBF;
+		}
+		.xiafangwangzhan{
+			color: #f4a460;
+			font-size: 20px;
+		}
+
+
+		/*中部内容栏*/
+		.main{
+			/*border: 1px solid red;*/
+			/*width: 1000px;*/
+			height: 400px;
+			/* margin: 0 auto; */
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			margin-top: -160px;
+			/* bottom: 100px; */
+
+		}
+		/*中部内容栏清除浮动*/
+		.main:after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+
+
+
+
+		/*左侧导航栏*/
+		.daohang{
+			width: 850px;
+			height: 360px;
+			border-width:3px;
+			border-style:dashed;
+			border-color:#FFAC55;
+			/*padding:1px;*/
+			margin: 0 auto;
+
+		}
+
+		/*导航栏中的列表*/
+
+			/*列表头*/
+		.first{
+			margin-top: 1px;
+
+		}
+
+		#daohang-img{
+			margin-top: 5px;
+			margin-bottom: -5px;
+			margin-left: -10px;
+		}
+		.first #changyong{
+			/*line-height: 20px;*/
+			display: inline;
+			/*margin-top: 110px;*/
+			/*margin: 0 auto;*/
+			margin-left: 200px;
+			font-size: 20px;
+			text-align: center;
+			padding-left: 45px;
+
+
+
+		}
+		#changyong span{
+			color: 	#D0104C;
+
+		}
+
+			/*列表开始*/
+		.dh-head{
+
+		}
+		.dh-li{
+			display: inline;
+			margin-left: -10px;
+			margin-right: 20px;
+		}
+		.dh-list{
+			display: inline-block;
+			/*line-height: 40px;*/
+			margin-left: 40px;
+
+
+		}
+
+		/*网站图标*/
+		.imgsrc{
+			margin-bottom: -10px;
+		}
+		.dh-list a{
+			text-decoration: none;
+			color: black;
+			font-weight: bold;
+			/*font-size: 10px;*/
+		}
+		.dh-list a:hover{
+			color: #9F9F9F;
+		}
+
+
+
+		/*导航栏分割线*/
+		.daohang hr{
+			border: 0;
+			height: 1px;
+			background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+		}
+
+
+
+		/*页脚备案&个人信息*/
+		.footer{
+			/*width: 100%;*/
+			position: absolute;
+			bottom: 10px;
+			width: 700px;
+			height: 70px;
+			left: 50%;
+			margin-left: -350px;
+
+		}
+		.footer p{
+			text-align: center;
+		}
+		.footer p a{
+			text-decoration: none;
+			color: 	#f08080;
+		}
+		.footer p a:hover{
+			color: #ff0000;
+		}
+
+
+
+		@font-face {
+		    font-family: 'Belshaw';
+		    src: url('https://ol73moumb.qnssl.com/Belshaw.otf');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+
+
+		/* 媒体查询 高度最大值为650px */
+
+		@media screen and (max-height: 650px){
+
+			.instruction h1{
+				
+				font-size: 30px;
+				
+			}
+			
+
+			.no-here span{
+				color: #ff6347;
+				font-weight: normal;
+				font-size: 16px;
+			}
+			.backhome{
+				text-decoration: none;
+				color: #404040;
+				font-size: 20px;
+				font-weight: bolder;
+			}
+			.backhome:hover{
+				color: #BFBFBF;
+			}
+			.xiafangwangzhan{
+				color: #f4a460;
+				font-size: 20px;
+			}
+
+
+		}
+
+
+		
+
+
+	</style>
+
+</head>
+
+<body>
+	<!--顶部介绍栏-->
+	<div class="instruction">
+		<h1>404 Not Found</h1>
+		<p class="no-here">您访问的页面<span>不存在</span>&或者已经被<span>移除了</span>ಥ_ಥ</p>
+		<p class="choose">您可以  <a href="https://blog.rickyer.com" class="backhome">回到主页</a>  or  访问<span class="xiafangwangzhan">下方的网站</span> </p>
+	</div>
+
+
+
+
+	<!--内容栏，包括导航和歌曲-->
+	<div class="main">
+		<!--右侧音乐栏-->
+<!-- 		<div id="music">
+
+			 <iframe frameborder="no" scrolling="no" seamless="seamless" height="600px" width="350px" src="https://music.daoapp.io/player?playlist=307444611&autoplay=1" id="ifr"></iframe>
+		</div> -->
+
+
+
+		<!--左侧导航栏-->
+		<div class="daohang">
+			<ul class="first">
+				<img src="https://ol73moumb.qnssl.com/dire.png" alt="" id="daohang-img">
+				<li id="changyong">这些都是前端<span>常用网站</span></li>
+			</ul>
+			<hr />
+
+			<ul class="dh-head">
+				<li class="dh-li">CDN</li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/qiniu.png" class="imgsrc"><a target="_blank" href="https://staticfile.org/">七牛</a></li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/360.png" class="imgsrc"><a target="_blank" href="http://libs.useso.com/">360</a></li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/baidu.png" class="imgsrc"><a target="_blank" href="http://cdn.code.baidu.com/">百度</a></li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/bootcdn.png" class="imgsrc"><a target="_blank" href="http://www.bootcdn.cn/">bootcdn</a></li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/cdnjs.png" class="imgsrc"><a target="_blank" href="https://cdnjs.com/">cdnjs</a></li>
+
+			</ul>
+			<hr />
+			<ul class="dh-head">
+				<li class="dh-li">框架</li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/vuejs.png" class="imgsrc"><a target="_blank" href="https://vuejs.org/">Vuejs</a></li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/angularjs.png" class="imgsrc"><a target="_blank" href="https://www.angularjs.org/">Angularjs</a></li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/bootstrap.png" class="imgsrc"><a target="_blank" href="http://www.bootcss.com/">Bootstrap</a></li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/react.png" class="imgsrc"><a target="_blank" href="https://facebook.github.io/react/">React</a></li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/jquery.png" class="imgsrc"><a target="_blank" href="http://jquery.com/">jQuery</a></li>
+
+			</ul>
+			<hr />
+
+			<ul class="dh-head">
+				<li class="dh-li">图标</li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/iconpng.png" class="imgsrc"><a target="_blank" href="http://www.iconpng.com/">iconpng</a></li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/findicons.png" class="imgsrc"><a target="_blank" href="http://findicons.com/">findicons</a></li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/iconfinder.png" class="imgsrc"><a target="_blank" href="https://www.iconfinder.com/">iconfinder</a></li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/easyicon.png" class="imgsrc"><a target="_blank" href="http://www.easyicon.net/">easyicon</a></li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/ali.png" class="imgsrc"><a target="_blank" href="http://www.iconfont.cn/">iconfont</a></li>
+
+			</ul>
+			<hr />
+
+			<ul class="dh-head">
+				<li class="dh-li">配色</li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/adobe.png" class="imgsrc"><a target="_blank" href="https://color.adobe.com/">Adobe Color</a></li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/ui.png" class="imgsrc"><a target="_blank" href="https://uigradients.com/">uigradients</a></li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/nipponcolor.png" class="imgsrc"><a target="_blank" href="http://nipponcolors.com/">nipponcolors</a></li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/paletton.png" class="imgsrc"><a target="_blank" href="http://paletton.com">paletton</a></li>
+
+
+			</ul>
+			<hr />
+
+			<ul class="dh-head">
+				<li class="dh-li">常用</li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/v2ex.png" class="imgsrc"><a target="_blank" href="https://www.v2ex.com/">V2EX</a></li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/zhihu.png" class="imgsrc"><a target="_blank" href="https://www.zhihu.com/">知乎</a></li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/stackoverflow.png" class="imgsrc"><a target="_blank" href="http://stackoverflow.com/">stackoverflow</a></li>
+				<li class="dh-list"><img src="https://ol73moumb.qnssl.com/github.png" class="imgsrc"><a target="_blank" href="https://github.com/">GitHub</a></li>
+
+
+			</ul>
+			<hr />
+
+
+
+
+
+		</div>
+
+
+
+	</div>
+
+	<div class="footer">
+		<p><a href="http://www.miitbeian.gov.cn/">浙ICP备15040135号-1</a> | <a href="https://blog.rickyer.com">Ricky</a></p>
+		<p>©2016-2017 Ricky. All Rights Reserved.</p>	
+	</div>
+	<script>
+		
+	</script>
+</body>
+</html>
